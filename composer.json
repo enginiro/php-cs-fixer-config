@@ -1,0 +1,24 @@
+{
+	"name": "enginiro/php-cs-fixer-config",
+	"description": "php-cs-fixer configuration.",
+	"type": "library",
+	"license": "proprietary",
+	"homepage": "https://github.com/enginiro/php-cs-fixer-config",
+	"readme": "README.adoc",
+	"autoload": {
+		"psr-4": {
+			"Enginiro\\PhpCsFixerConfig\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Jakub Jabůrek",
+			"email": "jaburek.jakub@gmail.com"
+		}
+	],
+	"minimum-stability": "stable",
+	"require": {},
+	"scripts": {
+		"phive-install": "phive install php-cs-fixer@^3.15"
+	}
+}

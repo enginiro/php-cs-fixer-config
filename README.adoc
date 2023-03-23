@@ -1,0 +1,46 @@
+= php-cs-fixer configuration
+
+This repository contains the PHP coding style definitions in form of a
+https://cs.symfony.com/[php-cs-fixer] configuration.
+
+== Usage
+
+To use Enginiro’s coding style in your project, first require this library, and
+then change the `Config` class to the one provided by this project.
+
+[source,json]
+.`composer.json`
+----
+{
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/enginiro/php-cs-fixer-config"
+		}
+	]
+}
+----
+
+[source,sh]
+----
+$ composer require --dev enginiro/php-cs-fixer-config:dev-main@dev
+----
+
+.`.php-cs-fixer.dist.php`
+[source,php]
+----
+<?php
+declare(strict_types=1);
+
+include_once __DIR__.'/vendor/autoload.php';
+
+$finder = PhpCsFixer\Finder::create();
+$finder
+	->in(__DIR__.'/src')
+	->in(__DIR__.'/tests');
+
+$config = new Enginiro\PhpCsFixerConfig\Config();
+$config->setFinder($finder);
+
+return $config;
+----

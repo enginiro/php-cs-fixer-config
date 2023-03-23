@@ -1,0 +1,6 @@
+/.phive/
+/tools/
+/vendor/
+/.php-cs-fixer.cache
+/*.sublime-project
+/*.sublime-workspace
