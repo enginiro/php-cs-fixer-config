@@ -30,8 +30,9 @@ class Config extends Base {
 			'location' => 'after_open',
 			'separate' => 'bottom'
 		],
-		'braces' => [
-			'position_after_functions_and_oop_constructs' => 'same'
+		'braces_position' => [
+			'classes_opening_brace' => 'same_line',
+			'functions_opening_brace' => 'same_line'
 		],
 		'single_blank_line_at_eof' => false,
 		'blank_line_after_opening_tag' => false,

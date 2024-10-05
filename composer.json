@@ -19,6 +19,6 @@
 	"minimum-stability": "stable",
 	"require": {},
 	"scripts": {
-		"phive-install": "phive install php-cs-fixer@^3.15"
+		"phive-install": "phive install php-cs-fixer@^3.64"
 	}
 }

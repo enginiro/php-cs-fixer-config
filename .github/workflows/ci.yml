@@ -11,5 +11,5 @@ jobs:
           php-version: '7.4'
           tools: composer, phive
       - run: composer install
-      - run: phive --no-progress install --trust-gpg-keys E82B2FB314E9906E php-cs-fixer@^3.15
+      - run: phive --no-progress install --trust-gpg-keys E82B2FB314E9906E php-cs-fixer@^3.64
       - run: ./tools/php-cs-fixer fix --show-progress=none --allow-risky=yes --dry-run --diff
